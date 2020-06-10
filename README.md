@@ -1,1 +1,1 @@
-# Introduccion-a-R-con-datos-Quimicos
+# Analisis de datos quimicos con R
