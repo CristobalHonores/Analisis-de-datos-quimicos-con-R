@@ -145,7 +145,7 @@ qcc(diameter[1:25,], type="R", newdata=diameter[26:40,])
 qcc(diameter[1:25,], type="S")
 qcc(diameter[1:25,], type="S", newdata=diameter[26:40,])
 
-# agregar límites de advertencia en 2 desviaciones std. 
+# agregar lÃ­mites de advertencia en 2 desviaciones std. 
 q <- qcc(diameter[1:25,], type="xbar", newdata=diameter[26:40,], plot=FALSE)
 (warn.limits <- limits.xbar(q$center, q$std.dev, q$sizes, 2))
 plot(q, restore.par = FALSE)
