@@ -7,21 +7,21 @@ El uso de la quimiometría, sumado a técnica de ciencia de datos actuales, es c
 Profesionales del área química y afines, incluyendo alumnos de pregrado que se vean enfrentados a problemas o en el desarrollo de esta ciencia.
 
 ## Requisitos mínimos:
- -Conocimientos del área química.
- -Computador propio.
- -Conocimientos básico o intermedio de uso de software.
- -Ganas.
+ •Conocimientos del área química.
+ •Computador propio.
+ •Conocimientos básico o intermedio de uso de software.
+ •Ganas.
  
 ## Objetivo general:
 Lograr que el participante sea capaz incorporar técnicas de ciencia de datos con R en el ambiente laboral químico. 
 
 ## Objetivos específicos:
- -Conocer el programa R y sus diferentes ambientes.
- -Lograr importar diversos tipos de bases de datos, proveniente de diferentes equipos.
- -Comparar dos o más procesos.
- -Generar gráficos que informen de manera más óptima los resultados obtenidos.
- -Conocer métodos de calibración multivariada.
- -Realizar control de calidad utilizando el programa R.
+ •Conocer el programa R y sus diferentes ambientes.
+ •Lograr importar diversos tipos de bases de datos, proveniente de diferentes equipos.
+ •Comparar dos o más procesos.
+ •Generar gráficos que informen de manera más óptima los resultados obtenidos.
+ •Conocer métodos de calibración multivariada.
+ •Realizar control de calidad utilizando el programa R.
 
 ## Temario
 
