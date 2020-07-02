@@ -27,7 +27,8 @@ Lograr que el participante sea capaz incorporar técnicas de ciencia de datos co
 
 |  Unidad |Contenido   |
 |---|---|
-| Introducción a R  y manipulación de datos.  | •	Introducción a R. -R Studio y R Studio Cloud. -Operaciones básicas en R. -Importar bases de datos. -Lectura de bases de datos. -Selección de columnas y filas. -Filtros. -Recodificación de datos.- Paquete dplyr. |  
-| Procesos de validación de métodos analíticos. | -Estadísticos descriptivos. -Tabulación de resultados. -Test para detectar anomalías. -Control de calidad. |  
-| Comparación de procesos.  |  -Estimación de 1 muestra. -Intervalos de confianza. -Comparación entre dos muestras. -Test de Chi-Cuadrado. -Anova.| 
-  
+| Introducción a R  y manipulación de datos.  | •Introducción a R. •R Studio y R Studio Cloud. •Operaciones básicas en R. •Importar bases de datos. •Lectura de bases de datos. •Selección de columnas y filas. •Filtros. •Recodificación de datos. •Paquete dplyr. |  
+| Procesos de validación de métodos analíticos. | •Estadísticos descriptivos. •Tabulación de resultados. •Test para detectar anomalías. •Control de calidad. |  
+| Comparación de procesos.  |  •Estimación de 1 muestra. •Intervalos de confianza. •Comparación entre dos muestras. •Test de Chi-Cuadrado. -Anova.| 
+| Métodos de calibración multivariada.  | •Calibracion univariada. •	Metodo stepwise. •	PCR. •	PLS. •	Validacion cruzada. •	Comparación. |
+| Visualización de datos. | •Principios basicos de la visualizacion. •Tipos de gráficos. •	Gráficos simples de R. •	Paquete  ggplot2. •	Paquete Plotly. |
