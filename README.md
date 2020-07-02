@@ -1,1 +1,1 @@
-# Analisis de datos quimicos con R
+# Introduccion a quimiometria con R
