@@ -1,10 +1,52 @@
 #############
 ## Resumen ##
 #############
-# Regresion lineal
-# Metodo Stepwise
-# PCR
-# PLSR
+
+# Regresion lineal ####
+# Base de datos para ejemplo
+install.packages("mlbench")
+library(mlbench)
+data(Glass)
+# Regresion linal simple
+reg1 <- lm(Glass$RI ~ Glass$Ca) # Realiza una regresion enre RI y Ca
+summary(reg1) # Entrega el resumen de la regresion
+# Metodo Stepwise ####
+step1 <- step(lm(RI ~ ., data=Glass)) # Realiza el Step de la regresion 2
+summary(step1) 
+
+# PCR ####
+gas1 <-  pcr(octane ~ NIR, 10, data = gasTrain, validation = "LOO") # Realiza la regresion por PCR
+summary(gas1) # Resumen de la regresion
+plot(RMSEP(gas1), legendpos = "topright") # Permite encontrar la cantidad de componentes mas optimos
+plot(gas1, ncomp = 3, asp = 1, line = TRUE) # Muestra el error entre los predichos y medidos
+plot(gas1, plottype = "scores", comps = 1:4)
+explvar(gas1) # Muestra el porcentaje de variabilidad explicada por cada componte
+plot(gas1, "loadings", comps = 1:3, legendpos = "topleft",
+     labels = "numbers", xlab = "nm")
+abline(h = 0)
+pred1 <- predict(gas1, ncomp = 3, newdata = gasTest) ; pred1 # Predice los valores de mis nuevos datos
+RMSEP(gas1, newdata = gasTest)
+mean((gasTest$octane - pred1)^2) # Entrega el MSE
+
+# PLSR ####
+gas2 <- plsr(octane ~ NIR, ncomp = 10, data = gasTrain, validation = "LOO") # Realiza la regresion por PLSR
+summary(gas2) # Resumen de la regresion
+plot(RMSEP(gas2), legendpos = "topright") # Permite encontrar la cantidad de componentes mas optimos
+plot(gas2, ncomp = 2, asp = 1, line = TRUE) # Muestra el error entre los predichos y medidos
+plot(gas2, plottype = "scores", comps = 1:3)
+explvar(gas2) # Muestra el porcentaje de variabilidad explicada por cada componte
+plot(gas2, "loadings", comps = 1:2, legendpos = "topleft",
+     labels = "numbers", xlab = "nm")
+abline(h = 0)
+pred2 <- predict(gas2, ncomp = 2, newdata = gasTest) ; pred2 # Predice los valores de mis nuevos datos
+RMSEP(gas2, newdata = gasTest)
+mean((gasTest$octane - pred2)^2) # Entrega el MSE
+
+
+###################
+## Visualizacion ##
+###################
+
 # Paquetes ####
 library(ggplot2)
 library(plotly)
@@ -154,4 +196,3 @@ plot_ly(
     align = c('left', 'center'),
     font = list(color = c('#506784'), size = 12)
   ))
-
