@@ -32,3 +32,7 @@ Lograr que el participante sea capaz incorporar técnicas de ciencia de datos co
 | Comparación de procesos.  |  •Estimación de 1 muestra. •Intervalos de confianza. •Comparación entre dos muestras. •Test de Chi-Cuadrado. -Anova.| 
 | Métodos de calibración multivariada.  | •Calibracion univariada. •	Metodo stepwise. •	PCR. •	PLS. •	Validacion cruzada. •	Comparación. |
 | Visualización de datos. | •Principios basicos de la visualizacion. •Tipos de gráficos. •	Gráficos simples de R. •	Paquete  ggplot2. •	Paquete Plotly. |
+
+### Instrucciones: 
+-Para descargar el material, hay que apretar el boton de Code y seleccionar descargar como ZIP.
+-Una vez descargado, abrir el proyecto de R: Introduccion a quimiometria.Rproj para poder utilziar todo el material del curso directamente.
