@@ -3,6 +3,8 @@
 #############
 
 # Estaditicos De centro ####
+library(readxl)
+Litiasis <- read_excel("Bases de datos/Base Litiasis.xls")
 library(dplyr)
 mean(Litiasis$PESO) # Entrega el promedio del peso
 hombres <- filter(Litiasis, GENERO == "Hombre") # Filtra solo por hombres
@@ -93,7 +95,7 @@ qcc(diameter[1:25,], type="R", newdata=diameter[26:40,])
 qcc(diameter[1:25,], type="S")
 qcc(diameter[1:25,], type="S", newdata=diameter[26:40,])
 
-# agregar límites de advertencia en 2 desviaciones std. 
+# agregar lÃ­mites de advertencia en 2 desviaciones std. 
 q <- qcc(diameter[1:25,], type="xbar", newdata=diameter[26:40,], plot=FALSE)
 (warn.limits <- limits.xbar(q$center, q$std.dev, q$sizes, 2))
 plot(q, restore.par = FALSE)
@@ -189,7 +191,7 @@ plot(anova) # Entrega multiples graficos
 # Tercer grafico: Entrega la escala
 # Cuarto grafico: Ayuda a visualizar anomalos
 TukeyHSD(anova) # Muestra la diferencia de medias (Entrega el orden de las medias)
-plot(TukeyHSD(anova)) # Enseña las diferencias de manera grafica
+plot(TukeyHSD(anova)) # EnseÃ±a las diferencias de manera grafica
 
 # Kurskal ####
 kruskal.test(Pottery$Al ~ Pottery$Site) # Realiza test de kruskal
