@@ -43,6 +43,7 @@ Litiasis[Litiasis$EDAD <= 35,]$FUMA # Muestra los fumadores menores o iguales a
 Litiasis$Peso_libras = Litiasis$PESO * 2.2 # Genera una columna del peso en libras
 head(Litiasis$Peso_libras)
 Litiasis$Peso_libras <- NULL # Elimina la variable Peso_libras
+Litiasis$...17 <- NULL
 
 # Recodificar bases de datos ####
 Litiasis$FUMA_RECOD <- ifelse(Litiasis$FUMA==1,"Si","No") 
